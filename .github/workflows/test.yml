@@ -13,6 +13,7 @@ jobs:
       - name: Generate a file
         run: |
           echo "Hello World" > hello.txt
+          pwd hello.txt
 
       - name: Use My Action
         uses: ./
