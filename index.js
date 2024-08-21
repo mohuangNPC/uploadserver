@@ -10,9 +10,6 @@ try {
     const form = new FormData();
     form.append('file', file);
     axios.post(upload_url, form, {
-        headers: {
-            ...form.getHeaders()
-        }
     }).then(response => {
         console.log('File uploaded successfully:', response.data);
         core.setOutput('result', 'File uploaded successfully');
