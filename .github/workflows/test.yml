@@ -19,4 +19,4 @@ jobs:
         uses: ./
         with:
           upload_url: ${{ secrets.upload_url }}
-          upload_file: '/home/runner/work/uploadserver/uploadserver/hello.txt'
+          upload_file: './hello.txt'

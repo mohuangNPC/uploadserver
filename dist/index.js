@@ -33916,6 +33916,7 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(3023);
 const fs = __nccwpck_require__(7147);
 const axios = __nccwpck_require__(9083);
+const FormData = __nccwpck_require__(5080);
 
 try {
     const upload_url = core.getInput('upload_url');

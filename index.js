@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const fs = require('fs');
 const axios = require('axios');
+const FormData = require('form-data');
 
 try {
     const upload_url = core.getInput('upload_url');
