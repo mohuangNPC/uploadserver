@@ -10,7 +10,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Generate a file
+        run: |
+          echo "Hello World" > hello.txt
+
       - name: Use My Action
         uses: ./
         with:
-          name: 'GitHub'
+          upload_url: ${{ secrets.upload_url }}
+          upload_file: './hello.txt'

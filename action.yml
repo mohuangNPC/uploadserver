@@ -1,10 +1,14 @@
 name: 'My JavaScript Action'
 description: 'A sample JavaScript action'
 inputs:
-  name:
-    description: 'Name to greet'
+  upload_url:
+    description: '上传地址'
     required: true
-    default: 'World'
+    default: ''
+  upload_file:
+    description: '上传文件'
+    required: true
+    default: ''
 runs:
   using: 'node12'
   main: 'dist/index.js'

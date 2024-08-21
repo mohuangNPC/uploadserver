@@ -7,6 +7,7 @@
     "test": "echo \"No tests yet!\""
   },
   "dependencies": {
-    "@actions/core": "^1.2.6"
+    "@actions/core": "^1.2.6",
+    "axios": "^1.7.4"
   }
 }
