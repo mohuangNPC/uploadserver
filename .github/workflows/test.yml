@@ -1,0 +1,16 @@
+name: Test My Action
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use My Action
+        uses: ./
+        with:
+          name: 'GitHub'
