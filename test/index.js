@@ -4,12 +4,12 @@ const axios = require('axios');
 const FormData = require('form-data');
 
 try {
-    const upload_url = core.getInput('upload_url');
-    const upload_file = core.getInput('upload_file');
+    const upload_url = 'http://localhost:8000/jmtt/upload';
+    const upload_file = 'C:\\Users\\mohuangNPC\\Desktop\\0827gjj.zip';
     // //信息文件，可选，包含这次上传文件的信息
-    const info_file = core.getInput('info_file');
+    const info_file = 'C:\\Users\\mohuangNPC\\Desktop\\info.txt';
     // //可选，上传文件的鉴权token
-    const token = core.getInput('token');
+    const token = '';
     console.log('upload_url', upload_url);
     console.log('upload_file', upload_file);
     // 读取文件

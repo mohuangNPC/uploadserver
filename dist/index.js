@@ -33940,6 +33940,7 @@ try {
     axios.post(upload_url, form, {
         headers: {
             'Authorization': token,
+            'Content-Type': 'multipart/form-data; charset=utf-8'
         }
     }).then(response => {
         console.log('File uploaded successfully:', response.data);
