@@ -12,6 +12,8 @@ try {
     const token = core.getInput('token');
     console.log('upload_url', upload_url);
     console.log('upload_file', upload_file);
+    console.log('info_file', info_file);
+    console.log('token', token);
     // 读取文件
     const file = fs.createReadStream(upload_file);
     const form = new FormData();
