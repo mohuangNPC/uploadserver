@@ -1,22 +1,22 @@
-name: Test My Action
-
-on: [push]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Generate a file
-        run: |
-          echo "Hello World" > hello.txt
-          pwd hello.txt
-
-      - name: Use My Action
-        uses: ./
-        with:
-          upload_url: ${{ secrets.upload_url }}
-          upload_file: './hello.txt'
+#name: Test My Action
+#
+#on: [push]
+#
+#jobs:
+#  test:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v4
+#
+#      - name: Generate a file
+#        run: |
+#          echo "Hello World" > hello.txt
+#          pwd hello.txt
+#
+#      - name: Use My Action
+#        uses: ./
+#        with:
+#          upload_url: ${{ secrets.upload_url }}
+#          upload_file: './hello.txt'
